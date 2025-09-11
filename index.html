@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maanikka Mishra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Maanikka Mishra</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Final Year CSE Student</h2>
+      <p>Dedicated Software Developer seeking for internships and jobs.</p>
+      <div class="buttons">
+        <a href="maanikka_mishra_resume.pdf" download class="cta-btn">📄 Download Resume</a>
+        <a href="maanikka_mishra_resume.pdf" target="_blank" class="cta-btn alt">🔍 View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="openModal('modal1')">
+        <h3>🧠 NeuroVista</h3>
+        <p>AI for Alzheimer's Detection</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal2')">
+        <h3>🗣️ MannMitra</h3>
+        <p>AI Mental Health Chatbot</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal3')">
+        <h3>📊 YouTube Comment Analyzer</h3>
+        <p>NLP & Visualization</p>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h3>NeuroVista</h3>
+        <p>AI platform for early Alzheimer's detection using MRI scans, facial/speech analytics, and cognitive assessments. Built with React, FastAPI, Firebase, and OpenCV.</p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h3>MannMitra</h3>
+        <p>Sentiment-aware mental health chatbot that uses NLP for emotional support. Built using Flask, TensorFlow, Scikit-learn, and deployed with Docker on AWS.</p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h3>YouTube Comment Analyzer</h3>
+        <p>Analyzes 50K+ YouTube comments using sentiment analysis and WordClouds. Real-time insights with Flask, NLTK, YouTube API, and Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:m.maanikka2004@gmail.com">m.maanikka2004@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Maanikka-Mishra" target="_blank">github.com/Maanikka-Mishra</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/maanikka-mishra-684513266" target="_blank">linkedin.com/in/maanikka-mishra</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maanikka Mishra • Professional Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
